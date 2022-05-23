@@ -23,7 +23,7 @@ output = '<?xml version="1.0" encoding="iso-8859-1"?>\n<classifieds customer="Ge
 
 #XML jeder Datei aus der Dateiliste in die Zieldatei schreiben
 for f in onlyfiles:
-    new_snip = '  <classified>\n    <image>{}</image>\n    <email>servicecenter@hersbrucker-zeitung.de</email>\n    <attribute key="od_base_issue">HZ</attribute>\n    <attribute key="od_base_date_published">{}</attribute>\n    <attribute key="od_partner_number">Bestatter-ID</attribute>\n  </classified>\n'.format(f, date_n)
+    new_snip = '  <classified>\n    <image>{}</image>\n    <email>'your_Mail'</email>\n    <attribute key="od_base_issue">'ID'</attribute>\n    <attribute key="od_base_date_published">{}</attribute>\n    <attribute key="od_partner_number">Bestatter-ID</attribute>\n  </classified>\n'.format(f, date_n)
     output += new_snip
 
 output += '</classifieds>'
